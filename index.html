@@ -81,6 +81,9 @@
       overflow: hidden;
       box-shadow: 0 4px 10px rgba(0,0,0,0.06);
       transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .product-card:hover {
@@ -89,6 +92,8 @@
 
     .product-card img {
       width: 100%;
+      height: 320px;
+      object-fit: cover;
       display: block;
     }
 
@@ -104,6 +109,21 @@
 
     .product-card .info p {
       color: #555;
+      margin-bottom: 10px;
+    }
+
+    .product-card .info button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .product-card .info button:hover {
+      background-color: #444;
     }
 
     footer {
@@ -134,31 +154,35 @@
     <h3>Featured Products</h3>
     <div class="grid">
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1602810318383-41953dcafd4d?auto=format&fit=crop&w=800&q=80" alt="Lipstick">
+        <img src="https://via.placeholder.com/400x320.png?text=Lipstick" alt="Lipstick">
         <div class="info">
           <h4>Velvet Matte Lipstick</h4>
           <p>$24.99</p>
+          <button>Add to Cart</button>
         </div>
       </div>
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1621570074381-86b69b865dbe?auto=format&fit=crop&w=800&q=80" alt="Skin Cream">
+        <img src="https://via.placeholder.com/400x320.png?text=Skin+Cream" alt="Skin Cream">
         <div class="info">
           <h4>Hydrating Skin Cream</h4>
           <p>$34.00</p>
+          <button>Add to Cart</button>
         </div>
       </div>
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1618477462265-b35e4b3604f4?auto=format&fit=crop&w=800&q=80" alt="Perfume">
+        <img src="https://via.placeholder.com/400x320.png?text=Perfume" alt="Perfume">
         <div class="info">
           <h4>Floral Eau de Parfum</h4>
           <p>$59.00</p>
+          <button>Add to Cart</button>
         </div>
       </div>
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1591895020759-7edc19f3f066?auto=format&fit=crop&w=800&q=80" alt="Makeup Kit">
+        <img src="https://via.placeholder.com/400x320.png?text=Makeup+Kit" alt="Makeup Kit">
         <div class="info">
           <h4>Full Glam Kit</h4>
           <p>$89.99</p>
+          <button>Add to Cart</button>
         </div>
       </div>
     </div>
