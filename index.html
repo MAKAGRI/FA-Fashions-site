@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fashion Empire</title>
+  <title>FA FASHIONS</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -41,8 +41,8 @@
     }
 
     .hero {
-      background: url('https://images.unsplash.com/photo-1600181951386-442a4f3a5d2b?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      height: 80vh;
+      background: url('https://images.unsplash.com/photo-1618376191535-6f4d4f839c99?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      height: 75vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -51,21 +51,21 @@
     }
 
     .hero h2 {
-      font-size: 44px;
+      font-size: 42px;
       background-color: rgba(0, 0, 0, 0.5);
       padding: 20px 30px;
       border-radius: 10px;
     }
 
-    .products {
-      max-width: 1200px;
+    section {
+      max-width: 1100px;
       margin: 60px auto;
       padding: 0 20px;
     }
 
-    .products h3 {
-      text-align: center;
+    .section-title {
       font-size: 28px;
+      text-align: center;
       margin-bottom: 40px;
     }
 
@@ -75,55 +75,27 @@
       gap: 30px;
     }
 
-    .product-card {
-      background-color: #f8f8f8;
+    .card {
+      background-color: #f9f9f9;
       border-radius: 10px;
-      overflow: hidden;
+      padding: 25px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-      transition: transform 0.3s ease;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
     }
 
-    .product-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .product-card img {
-      width: 100%;
-      height: 320px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .product-card .info {
-      padding: 15px;
-      text-align: center;
-    }
-
-    .product-card .info h4 {
+    .card h4 {
+      margin-bottom: 10px;
       font-size: 18px;
-      margin-bottom: 10px;
     }
 
-    .product-card .info p {
+    .card p {
       color: #555;
-      margin-bottom: 10px;
+      line-height: 1.6;
     }
 
-    .product-card .info button {
-      background-color: #000;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .product-card .info button:hover {
-      background-color: #444;
+    .contact-info p {
+      text-align: center;
+      margin: 10px 0;
+      font-size: 16px;
     }
 
     footer {
@@ -137,59 +109,54 @@
 </head>
 <body>
   <header>
-    <h1>FASHION EMPIRE</h1>
+    <h1>FA FASHIONS</h1>
     <nav>
-      <a href="#">Home</a>
-      <a href="#shop">Shop</a>
       <a href="#about">About</a>
+      <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h2>Unleash Your Elegance</h2>
+    <h2>Empowering Style. Elevating Beauty.</h2>
   </section>
 
-  <section class="products" id="shop">
-    <h3>Featured Products</h3>
+  <section id="about">
+    <h3 class="section-title">Who We Are</h3>
+    <div class="card">
+      <p>FA FASHIONS is a fashion-forward company based in Rhode Island, focused on empowering individuals through style and premium self-care. From beauty products to fashion accessories, we bring elegance, innovation, and confidence to your everyday look.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <h3 class="section-title">What We Offer</h3>
     <div class="grid">
-      <div class="product-card">
-        <img src="https://via.placeholder.com/400x320.png?text=Lipstick" alt="Lipstick">
-        <div class="info">
-          <h4>Velvet Matte Lipstick</h4>
-          <p>$24.99</p>
-          <button>Add to Cart</button>
-        </div>
+      <div class="card">
+        <h4>🧴 Beauty Products</h4>
+        <p>From skincare to cosmetics, we source and deliver high-quality beauty solutions to suit all skin types and tones.</p>
       </div>
-      <div class="product-card">
-        <img src="https://via.placeholder.com/400x320.png?text=Skin+Cream" alt="Skin Cream">
-        <div class="info">
-          <h4>Hydrating Skin Cream</h4>
-          <p>$34.00</p>
-          <button>Add to Cart</button>
-        </div>
+      <div class="card">
+        <h4>👜 Accessories</h4>
+        <p>Elegant and stylish accessories that complete your outfit with confidence and finesse.</p>
       </div>
-      <div class="product-card">
-        <img src="https://via.placeholder.com/400x320.png?text=Perfume" alt="Perfume">
-        <div class="info">
-          <h4>Floral Eau de Parfum</h4>
-          <p>$59.00</p>
-          <button>Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card">
-        <img src="https://via.placeholder.com/400x320.png?text=Makeup+Kit" alt="Makeup Kit">
-        <div class="info">
-          <h4>Full Glam Kit</h4>
-          <p>$89.99</p>
-          <button>Add to Cart</button>
-        </div>
+      <div class="card">
+        <h4>🚚 Fast Shipping</h4>
+        <p>Reliable, fast, and traceable delivery across the U.S. and internationally.</p>
       </div>
     </div>
   </section>
 
+  <section id="contact">
+    <h3 class="section-title">Contact Us</h3>
+    <div class="card contact-info">
+      <p><strong>Email:</strong> <a href="mailto:admin@fafashions.shop">admin@fafashions.shop</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+14014855011">(401) 485-5011</a></p>
+      <p><strong>Location:</strong> Based in Providence, Rhode Island</p>
+    </div>
+  </section>
+
   <footer>
-    <p>&copy; 2025 Fashion Empire. All rights reserved.</p>
+    <p>&copy; 2025 FA FASHIONS. All rights reserved.</p>
   </footer>
 </body>
 </html>
